@@ -1,0 +1,228 @@
+body {
+  
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-box, .report-card, .analysis-card {
+  max-width: 100%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.timer {
+  background-color: #00b386;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  line-height: 1.9;
+}
+
+.startBtn {
+  background-color: #00b386;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: none;
+  line-height: 1.9;
+}
+.onlineTestBtn {
+  background-color: #b34700;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  line-height: 1.9;
+}
+
+.question-card {
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  padding: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.question-number-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000099;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.question {
+  font-size: 18 px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.options .option {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0; /* Ensures space between options */
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option.selected {
+  background-color: #ffcc66 !important;
+}
+
+.option.correct {
+  background-color: #00cc66;
+  color: white;
+}
+
+.option.wrong {
+  background-color: #ff3333;
+  color: white;
+}
+
+.btn-primary, .btn-black {
+  padding: 3px 7px;
+  font-size: 16px;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  line-height: 1.9;
+}
+
+.btn-primary {
+  background-color: #2e2eb8;
+  color: white;
+}
+
+.btn-black {
+  background-color: #000;
+  color: white;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.report-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 0px;
+}
+
+.result-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #009999;
+  margin-top: 10px;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding: 3px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.correct-feedback {
+  background-color: #80ffbf;
+  color: white;
+}
+
+.wrong-feedback {
+  background-color: #ff9999;
+  color: white;
+}
+
+.not-attempted-feedback {
+  background-color: #ffbf80;
+  color: white;
+}
+
+.analysis-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+ .analysis-box .question {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.analysis-box .option {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0; /* Ensures space between options */
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* New style for explanation box */
+.explanation-box {
+  background-color: #e6e6ff; /* Light blue background */
+  
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  font-size: 16px;
+  color: #333366; /* Darker blue text */
+  font-weight: normal;
+}
