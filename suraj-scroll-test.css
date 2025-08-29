@@ -1,5 +1,4 @@
 body {
-  
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ body {
   background: #ffffff;
   padding: 10px;
   border-radius: 0px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 3px 15px rgba(0,0,0,0.19);
 }
 
 .quiz-header {
@@ -22,53 +21,34 @@ body {
 }
 
 .timer {
-  background-color: #00b386;
+  background-color: #009999;
   color: white;
   padding: 3px 6px;
   border-radius: 0px;
   font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  line-height: 1.9;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.startBtn {
-  background-color: #00b386;
+.startBtn, .onlineTestBtn {
   color: white;
-  display: inline-block;
   padding: 3px 6px;
   border-radius: 0px;
   font-weight: bold;
-  font-size: 16px;
-  float: right;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  font-size: 15px;
+  margin: 15px 0;
   border: none;
-  line-height: 1.9;
-}
-.onlineTestBtn {
-  background-color: #b34700;
-  color: white;
-  display: inline-block;
-  padding: 3px 6px;
-  border-radius: 0px;
-  font-weight: bold;
-  font-size: 16px;
-  float: right;
-  margin-bottom: 15px;
-  margin-top: 15px;
   cursor: pointer;
-  border: none;
-  line-height: 1.9;
+  line-height: 1.6;
 }
+
+.startBtn { background-color: #009999; }
+.onlineTestBtn { background-color: #009999; }
 
 .question-card {
   border: 1px solid #ddd;
-  border-radius: 0px;
   padding: 5px;
   margin-bottom: 20px;
-  
 }
 
 .question-number-circle {
@@ -81,21 +61,20 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin: 10px 0;
 }
+
 .question {
-  font-size: 18 px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
-  
 }
 
 .options .option {
   font-size: 16px;
   padding: 10px;
-  margin: 10px 0; /* Ensures space between options */
+  margin: 10px 0;
   border: 1px solid #cccccc;
   border-radius: 0px;
   background-color: #f2f2f2;
@@ -103,47 +82,29 @@ body {
   transition: background 0.3s ease;
 }
 
-.option.selected {
-  background-color: #ffcc66 !important;
-}
-
-.option.correct {
-  background-color: #00cc66;
-  color: white;
-}
-
-.option.wrong {
-  background-color: #ff3333;
-  color: white;
-}
+.option.selected { background-color: #ffcc66 !important; }
+.option.correct { background-color: #00cc66; color: white; }
+.option.wrong { background-color: #ff3333; color: white; }
 
 .btn-primary, .btn-black {
   padding: 3px 7px;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 0px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   display: block;
   margin: 20px auto;
-  line-height: 1.9;
+  line-height: 1.6;
 }
 
-.btn-primary {
-  background-color: #2e2eb8;
-  color: white;
-}
-
-.btn-black {
-  background-color: #000;
-  color: white;
-}
+.btn-primary { background-color: #2e2eb8; color: white; }
+.btn-black { background-color: #000; color: white; }
 
 .report-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .report-item {
@@ -151,7 +112,7 @@ body {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 0px;
 }
 
@@ -165,64 +126,29 @@ body {
 
 .feedback {
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 13px;
+  margin: 10px 0;
   padding: 3px;
-  border-radius: 0px;
   text-align: center;
 }
 
-.correct-feedback {
-  background-color: #80ffbf;
-  color: white;
-}
-
-.wrong-feedback {
-  background-color: #ff9999;
-  color: white;
-}
-
-.not-attempted-feedback {
-  background-color: #ffbf80;
-  color: white;
-}
+.correct-feedback { background-color: #80ffbf; color: white; }
+.wrong-feedback { background-color: #ff9999; color: white; }
+.not-attempted-feedback { background-color: #66c2ff; color: white; }
 
 .analysis-box {
-  background: #ffffff;
   border: 1px solid #ddd;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
- .analysis-box .question {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.analysis-box .option {
-  font-size: 16px;
+  margin: 20px 0;
   padding: 10px;
-  margin: 10px 0; /* Ensures space between options */
-  border: 1px solid #cccccc;
-  border-radius: 0px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  font-size: 16px;
 }
 
-/* New style for explanation box */
+.analysis-box .question { font-size: 17px; font-weight: bold; }
+.analysis-box .option { font-size: 16px; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 0px; }
+
 .explanation-box {
-  background-color: #e6e6ff; /* Light blue background */
-  
+  background-color: #ffe6cc;
   padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 0px;
+  margin: 10px 0;
   font-size: 16px;
-  color: #333366; /* Darker blue text */
-  font-weight: normal;
+  color: #000000;
 }
